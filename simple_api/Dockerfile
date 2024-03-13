@@ -1,5 +1,5 @@
 FROM python:3.8-buster
-MAINTAINER djemil.aitsahel@gmail.com for bootcamp devops eazytraining
+LABEL maintainer="djemil.aitsahel@gmail.com for bootcamp devops eazytraining"
 EXPOSE 5000
 COPY ./requirements.txt /
 COPY ./student_age.py /
