@@ -1,0 +1,28 @@
+version: '3'
+services:
+  website:
+    image: php:apache
+    environment:
+      USERNAME: toto
+      PASSWORD: python
+    volumes:
+      - ./website:/var/www/html
+    depends_on:
+      - api
+    ports:
+      - "80:80"
+    networks:
+      - mini-projet-docker-network
+
+  api:
+    image: simple_api:v1
+    volumes:
+      - /home/vagrant/mini-projet-docker/simple_api/student_age.json:/data/student_age.json
+    ports:
+      - "5000:5000"
+    networks:
+      - mini-projet-docker-network
+
+networks:
+  mini-projet-docker-network:
+    driver: bridge
