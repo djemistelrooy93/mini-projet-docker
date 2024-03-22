@@ -1,0 +1,19 @@
+version: '3.8'  
+
+services:
+  registry:  
+    container_name: registry  
+    image: registry:2  
+    ports:
+      - "5000:5000"  
+    restart: always  
+
+  portainer-ce:  
+    container_name: portainer  
+    image: portainer/portainer-ce  
+    ports:
+      - "9000:9000"  
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"  
+    restart: always  
+
