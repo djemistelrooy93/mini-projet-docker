@@ -43,7 +43,7 @@ Voici ce que l'on obtient lorsque l'on accède à notre application lancée via 
 
 ![registry1](screenshots/registry1.PNG)
 
-1. 8. **Push de l'image sur la registry privée :** J'ai tagué mon image Docker et l'ai poussée sur ma registry privée.
+8. **Push de l'image sur la registry privée :** J'ai tagué mon image Docker et l'ai poussée sur ma registry privée.
 
 ![registry3](screenshots/registry3.PNG)
 
@@ -53,7 +53,7 @@ Voici ce que l'on obtient lorsque l'on accède à notre application lancée via 
 
 ![registry5](screenshots/registry5.PNG)
 
-###########################################################################################################################################################################################
+#######################################################################################
 
 # Mini Docker Project
 
@@ -87,8 +87,6 @@ Copy code
 6. **Final API Test:** To verify the proper functioning of the API, I used the following command: 
 curl -u toto:python -X GET http://172.17.0.2:5000/pozos/api/v1.0/get_student_ages
 
-vbnet
-Copy code
 
 Alternatively, one can attempt to access it via the browser; authentication is required. Once the correct credentials are entered, the content of the JSON file is retrieved.
 
