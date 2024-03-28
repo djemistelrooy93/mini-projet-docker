@@ -1,9 +1,9 @@
 # Mini Projet Docker
 
 ## Introduction
-Ce projet vise à démontrer l'utilisation de Docker pour créer et exécuter des applications dans des conteneurs. Ce README fournit un aperçu des étapes suivies pour configurer et exécuter le projet, ainsi que des informations sur les problèmes rencontrés et leur résolution.
+Ce projet vise à démontrer les capacités de l'élève à utiliser Docker pour créer et exécuter des applications dans des conteneurs. Ce README fournit un aperçu des étapes suivies pour configurer et exécuter le projet, ainsi que des informations sur les problèmes rencontrés et leur résolution.
 
-## Étapes de développement
+## Étapes du projet
 
 1. **Création du repository GitHub :** J'ai créé un repository sur mon GitHub personnel pour travailler et documenter l'ensemble du projet : https://github.com/djemistelrooy93/mini-projet-docker/
 
@@ -26,11 +26,14 @@ On peut également tenter d’y accéder via notre navigateur ; une authentifica
 ![browser1](screenshots/6_browser1.PNG)
 ![browser2](screenshots/7_browser2.PNG)
 
+7. **Rédaction du docker-compose.yml :** Maintenant, que l'on a rédigé notre Dockerfile et que l'on a obtenu une application fonctionnelle, on va pouvoir industrialiser/automatiser via docker-compose. Voici le résultat de l'exécution de notre fichier docker-compose.yml
+![results](screenshots/results.PNG)
+(![browser3](screenshots/browser3.PNG)
 
-7. **Rédaction du docker-compose.yml :** Maintenant, je vais rédiger le docker-compose.yml pour faciliter la gestion des conteneurs.
-
-## Remarque
-Assurez-vous d'avoir Docker installé sur votre système avant de suivre ces étapes.
-
-## Licence
-Ce projet est sous licence [MIT](lien_vers_licence).
+7. **Création de la registry privée :** J'ai créé une registry privée afin d'y pousser mes images Docker. J'ai opté pour Portus pour l'interface graphique.
+![registry1](screenshots/registry1.PNG)
+8. **Push de l'image sur la registry privée :** J'ai tagué mon image Docker et l'ai poussée sur ma registry privée.
+![registry3](screenshots/registry3.PNG)
+9. **Consultation de l'image via l'interface graphique :** On se connecte à l'interface graphique de Portus pour consulter l'image précédemment créée et poussée dans la registry privée.
+![registry4](screenshots/registry4.PNG)
+![registry5](screenshots/registry5.PNG)
